@@ -1,10 +1,10 @@
 ## Denis Gallo (194441) | denis.gallo@studenti.unitn.it
-My heroku server: http://assignment3-denisgallo.herokuapp.com/people?wsdl 
+My heroku server: http://assignment3-denisgallo.herokuapp.com/people?wsdl  
 My github repositories:  
 https://github.com/DenisGallo/introsde-2017-assignment-3-server  
 https://github.com/DenisGallo/introsde-2017-assignment-3-client  
 I worked with Mattia Buffa.  
-Heroku server: https://server-as3.herokuapp.com/people?wsdl
+Heroku server: https://server-as3.herokuapp.com/people?wsdl  
 His github repositories:  
 https://github.com/CommanderBuffin/introsde-2017-assignment-3-server  
 https://github.com/CommanderBuffin/introsde-2017-assignment-3-client  
@@ -12,7 +12,8 @@ https://github.com/CommanderBuffin/introsde-2017-assignment-3-client
 ## Project
 
 ### Description of the code
-The package of the server project is **introsde.assignment3.soap**. In the **endpoint** package there is 1 application class to run the project locally on a standalone http server. In the **dao** package there is the good-old LifeCoachDao, who keeps the connections and persistence alive. The database operations were not implement here but in the model classes. All basic database operations were implemented for every model (even if the names in the code might be copy-pasted and not very beautyful): getAll(), save(), update(), remove().  
+The package of the server project is **introsde.assignment3.soap**.  
+In the **endpoint** package there is 1 application class to run the project locally on a standalone http server. In the **dao** package there is the good-old LifeCoachDao, who keeps the connections and persistence alive. The database operations were not implement here but in the model classes. All basic database operations were implemented for every model (even if the names in the code might be copy-pasted and not very beautyful): getAll(), save(), update(), remove().  
 In the **model** package 3 models were created to run this assignment: person, activity and activity type. One person can have more activites and one activitytype can have more activities. The main difference between this assignment and the second one is a "rating" parameter in activity.
 In **ws** there is the interface that expose the web service methods available on the server: "people.java". PeopleImpl is the class that implements each method of the interface. Only the specified tasks were implemented and tested, so it's pretty easy to break the server by sending requests other than those.  
 The database used is in the main folder of the project, named **people.sqlite**.
